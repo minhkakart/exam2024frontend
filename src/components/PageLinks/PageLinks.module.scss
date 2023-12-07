@@ -1,0 +1,15 @@
+.wrapper{
+    margin-top: 20px;
+
+    .pagelinks{
+        padding: 10px;
+        display: inline-block;
+    }
+    .active{
+        background-color: aquamarine;
+        color: red;
+    }
+    .disable{
+        color: #000;
+    }
+}

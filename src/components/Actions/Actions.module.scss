@@ -1,0 +1,82 @@
+.wrapper {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+
+    .btn {
+        box-sizing: border-box;
+        cursor: pointer;
+        // color: blue;
+        background-color: transparent;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        padding: 4px;
+        width: 40px;
+        height: 30px;
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+    }
+
+    .confirm {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .confirm_wrapper {
+            background-color: bisque;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+            .wrap_btn {
+                display: flex;
+                justify-content: space-between;
+
+                .btn-conf {
+                    width: 45%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 6px;
+                }
+
+                .btn-delete {
+                    text-transform: uppercase;
+                    background: #a62d2d;
+                    color: #fff !important;
+                    border: 0;
+                    border-radius: 6px;
+
+                    &:hover {
+                        background-color: #f23838;
+                    }
+                }
+
+                .btn-prime {
+                    text-transform: uppercase;
+                    background: #295073;
+                    color: #fff !important;
+                    border: 0;
+                    border-radius: 6px;
+
+                    &:hover {
+                        background-color: #137ad7;
+                    }
+                }
+            }
+        }
+    }
+}
